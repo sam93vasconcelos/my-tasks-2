@@ -1,0 +1,18 @@
+<div class="singles-wrapper">
+  <ul>
+    <li *ngFor="let task of tasks; let index = index">
+      <input type="checkbox" [formControl]="task.control" [id]="'asldkf'+index+'alsdkfj'">
+      <label [for]="'asldkf'+index+'alsdkfj'" [ngClass]="{ completed: task.completed }">{{ task.title }}</label>
+    </li>
+  </ul>
+  <div class="totals">
+    <span class="color-success">
+      <i class="icon-check"></i>
+      {{ completed }}
+    </span>
+    <span class="color-error">
+      <i class="icon-cancel"></i>
+      {{ uncompleted }}
+    </span>
+  </div>
+</div>

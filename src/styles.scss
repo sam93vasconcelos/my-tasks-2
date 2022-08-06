@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import "./assets/fontello/css/fontello.css";
+
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #444;
+  color: #ddd;
+}
+
+i.bigger1 {
+  font-size: 2em;
+}
+
+.color-success {
+  color: $success;
+}
+
+.color-error {
+  color: $error;
+}

@@ -1,0 +1,40 @@
+.singles-wrapper {
+  height: 40vh;
+  width: 90%;
+  background: #555;
+  margin: 0 auto;
+  border-radius: 0.8em;
+  box-shadow: 0 0 5px #222 inset;
+  overflow: hidden;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 2em;
+  
+  ul {
+    margin: 1em;
+    list-style-type: none;
+    overflow: scroll;
+
+    li {
+      line-height: 2em;
+      border-bottom: solid 1px #444;
+
+      label.completed {
+        text-decoration: line-through;
+      }
+
+      input {
+        margin-right: 1em;
+      }
+    }
+  }
+
+  .totals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #777;
+    box-shadow: 0 0 10px #222 inset;
+    gap: 1em;
+  }
+}
