@@ -29,3 +29,18 @@ i.bigger1 {
 .color-error {
   color: $error;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #888;
+}
+::-webkit-scrollbar-thumb {
+  background: #b4b4b4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f1f1f1;
+}
